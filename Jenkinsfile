@@ -47,7 +47,7 @@ try {
     }
   }
 
-  if (env.BRANCH_NAME == 'master') {
+  if (env.terraformStage == 'apply') {
 
     // Run terraform apply
     stage('apply') {
