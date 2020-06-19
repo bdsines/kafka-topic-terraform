@@ -20,6 +20,7 @@ try {
     //   ]]) 
     //   {
         ansiColor('xterm') {
+          dir(path:"dev")
           sh 'terraform init'
         }
     //   }
@@ -37,6 +38,7 @@ try {
     //   ]]) 
     // {
         ansiColor('xterm') {
+             dir(path:"dev")
           sh 'terraform plan'
         }
     //   }
@@ -56,6 +58,7 @@ try {
         // ]]) 
         // {
           ansiColor('xterm') {
+               dir(path:"dev")
             sh 'terraform apply -auto-approve'
           }
         // }
@@ -73,6 +76,7 @@ try {
         // ]]) 
         // {
           ansiColor('xterm') {
+               dir(path:"dev")
             sh 'terraform show'
           }
         // }
