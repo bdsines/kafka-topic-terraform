@@ -19,11 +19,12 @@ try {
     //     secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
     //   ]]) 
     //   {
+      dir(path:"dev") {
         ansiColor('xterm') {
-          dir(path:"dev")
           sh 'terraform init'
         }
     //   }
+      }
     }
   }
 
