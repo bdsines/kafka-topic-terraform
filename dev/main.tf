@@ -8,5 +8,6 @@ tls_enabled = false
 module "kafkatopic" {
   source = "../modules/kafka-topic"
   topic_name="bd-testtopic"
+  topic_partitions="2"
 
 }
