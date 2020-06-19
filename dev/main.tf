@@ -7,6 +7,6 @@ tls_enabled = false
 }
 module "kafkatopic" {
   source = "../modules/kafka-topic"
-  topic_name="centralus"
+  topic_name="bd-testtopic"
 
 }
